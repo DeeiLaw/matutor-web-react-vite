@@ -8,7 +8,6 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 function App() {
   return (
     <Router>
-      <div>
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -16,8 +15,7 @@ function App() {
           <Route exact path="/login">
             <LoginSignup />
           </Route>
-        </Switch>
-      </div>    
+        </Switch> 
     </Router>
   );
 }

@@ -1,13 +1,17 @@
-import React from "react";
+import "./Landing.css";
+import { Link } from 'react-router-dom';
+
 
 const HomePage = () => {
 
     return (
-        <div
-          className="button"
+
+        <Link to="/login"
+          className="submit"
         >
-          Sign Up
-        </div>
+          Test to login
+        </Link>
+       
     );
 }
 
