@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//import {useHistory } from "react-router-dom";
 import "./LoginSignup.css";
 import axios from "axios";
 
@@ -12,6 +13,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaSchoolCircleCheck } from "react-icons/fa6";
 
 const LoginSignup = () => {
+
 
   const [action, setAction] = useState("Login");
   const [item, setItem] = useState("Learner");
@@ -166,7 +168,7 @@ const LoginSignup = () => {
         </div>
         <div
           className={action === "Sign Up" ? "submit gray" : "submit"}
-          onClick={handleLoginClick}
+          onClick={() => {handleLoginClick;}}
         >
           Login
         </div>

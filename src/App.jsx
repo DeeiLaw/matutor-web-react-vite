@@ -1,16 +1,25 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+
+import HomePage from "./Components/Landing/LandingPage";
 import LoginSignup from './Components/LoginSignup/LoginSignup';
-import Dashboard from './Components/SignUp/SignUp';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div>
-      <LoginSignup />
-    </div>
-  )
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/login">
+            <LoginSignup />
+          </Route>
+        </Switch>
+      </div>    
+    </Router>
+  );
 }
 
 export default App
