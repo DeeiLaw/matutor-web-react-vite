@@ -50,6 +50,9 @@ const LoginSignup = () => {
     setAction("Sign Up");
   };
 
+  const handleSignUpLoginClick =(event) => {
+    setAction("Login");
+  }
   /*function userType(event) {
         console.log(event.target.value)
     } get*/
@@ -61,11 +64,11 @@ const LoginSignup = () => {
         <div className="underline"></div>
       </div>
         {action === "Login" ? (
-          /* RENDER LOGIN FIELDS*/
+          /* RENDER LOGIN FIELDS */
           <div className="inputs">
             <div className="input">
               <img src={email_icon} alt="" />
-              <input type="email" placeholder="Email nga orig" onChange={(e) => { setEmail(e.target.value); }}/>
+              <input type="email" placeholder="Email Address" onChange={(e) => { setEmail(e.target.value); }}/>
             </div>
             <div className="input">
               <img src={password_icon} alt="" />
@@ -165,12 +168,21 @@ const LoginSignup = () => {
         >
           Sign Up
         </div>
-        <div
-          className={action === "Sign Up" ? "submit gray" : "submit"}
-          onClick={() => {handleLoginClick;}}
-        >
-          Login
-        </div>
+        {action === "Sign Up" ? ( 
+            <div 
+              className="submit gray"
+              onClick={handleSignUpLoginClick}
+            >
+              I Have an Account
+            </div> 
+          ) : (
+            <div
+              className={action === "Sign Up" ? "submit gray" : "submit"}
+              onClick={() => {handleLoginClick;}}
+            >
+              Login
+            </div>
+          )}
       </div>
     </div>
   );
