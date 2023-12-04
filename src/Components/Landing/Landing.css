@@ -1,8 +1,17 @@
-body{
-    background: linear-gradient(#42006c, #2a00B7)no-repeat center center fixed;
-    background-size: cover;
-  }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    max-width: 30%;
+    min-height: 900px;
+    background:  green;
+}
 
+.whatIMG{
+    width: 500px;
+    height: auto;
+}
 .submit-container{
     display: flex;
     gap: 30px;

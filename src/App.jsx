@@ -8,14 +8,14 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 function App() {
   return (
     <Router>
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/login">
-            <LoginSignup />
-          </Route>
-        </Switch> 
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/login">
+          <LoginSignup />
+        </Route>
+      </Switch> 
     </Router>
   );
 }

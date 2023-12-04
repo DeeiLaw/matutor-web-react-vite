@@ -8,7 +8,6 @@ const DashboardTC = () => {
       <div>
         
       </div>
-       
     );
 }
 
