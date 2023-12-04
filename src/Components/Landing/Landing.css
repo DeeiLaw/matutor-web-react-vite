@@ -15,7 +15,18 @@
     font-size: 18px;
     font-weight: 550;
 }
-
+.pointer{
+    position: relative;
+    width: 50px;
+    transform: scaleX(-1);
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    pointer-events:none;
+    color: #ffea00;
+}
 .studentsLP{
     position: relative;
     width: 650px;
@@ -41,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 320px;
     height: 59px;
     color: #fff;
     border-radius: 50px;
